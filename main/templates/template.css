@@ -1,0 +1,112 @@
+
+			:root {
+				--fg:		#ebdbb2;
+				--bg:		#111516;
+			}
+
+			* {
+				all: 		none;
+				color: 		var(--fg);
+				text-align: center;
+				font-family: ubuntu;
+			}
+
+			body {
+				background-color: 	var(--bg);
+			}
+
+			.external {
+				display: 	table;
+				position: 	absoulte;
+				top: 		0;
+				left: 		0;
+				height: 	100%;
+				width: 		100%;
+			}
+
+			.middle {
+				display: 		table-cell;
+				vertical-align: middle;
+			}
+
+			.content {
+				margin-left: 			auto;
+				margin-right: 			auto;
+				display: 				grid;
+				grid-template-columns: 	$width$;
+				grid-gap:  				15px;
+				justify-content: 		center;
+			}
+
+			.cell {
+				border: 			5px solid var(--fg);
+				padding: 			20px;
+				width: 				80px;
+				height:				80px;
+				transition: 		0.3s;
+				text-decoration: 	none;
+				justify-content:	left;
+			}
+			.cell:hover {
+				background-color: 	var(--fg);
+			}
+
+			$entry$
+
+			.cell:hover * {
+				color: 	var(--bg);
+			}
+
+			.blank {
+				width:	130px;
+				height:	130px;
+			}
+
+			h1 {
+				margin: 	0px;
+				font-size: 	15px;
+				text-align: left;
+			}
+
+			h2 {
+				margin: 	2px;
+				margin-left: 0px;
+				font-size: 	40px;
+				text-align: left;
+			}
+
+			h3 {
+				margin: 	0px;
+				font-size: 	15px;
+				text-align: left;
+			}
+			
+			form {
+				width: 					$formWidth$;
+				border: 				3px solid var(--fg);
+				margin: 				auto;
+				margin-bottom: 			15px;
+				display: 				grid;
+				grid-template-columns: 	auto auto;
+				grid-gap: 				0px;
+				justify-content:		left;
+			}
+
+			input {
+				all: 			unset;
+				margin-left: 	10px;
+				text-align: 	left;
+				font-size: 		22px;
+				width: 			$inputWidth$;
+			}
+
+			button {
+				all: 			unset;
+				margin-left: 	5px;
+				font-size: 		30px;
+				width: 			30px;
+			}
+
+			h4 {
+				font-size:	40px;
+			}

@@ -1,0 +1,27 @@
+github,			www.github.com,							dev
+stack,			stackoverflow.com,						dev
+blank,,
+blank,,
+flathub,		flathub.org/apps,dev
+fish,			fishshell.com,							dev
+
+calendar,		calendar.google.com,					personal
+gmail,			mail.google.com,						personal
+drive,			drive.google.com,						personal
+blank,,
+discord,		discord.com/channels/@me,				social
+whatsapp,		web.whatsapp.com,						social
+
+mystudies,		www.lehrbetrieb.ethz.ch/myStudies,		uni
+mail,			mail.ethz.ch,							uni
+polybox,		polybox.ethz.ch,						uni
+vis,			exams.vis.ethz.ch,						uni
+wikipedia,		www.wikipedia.org,
+chatgpt,		chat.openai.com/chat,
+
+gitlab,			gitlab.inf.ethz.ch,						uni
+codeexpert,		expert.ethz.ch,							uni
+
+reddit,			www.reddit.com,							entertainment
+twitch,			www.twitch.tv,							entertainment
+youtube,		www.youtube.com,						entertainment
