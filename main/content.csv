@@ -2,7 +2,7 @@ github,			www.github.com,							dev
 stack,			stackoverflow.com,						dev
 blank,,
 blank,,
-flathub,		flathub.org/apps,dev
+flathub,		flathub.org/apps,						dev
 fish,			fishshell.com,							dev
 
 calendar,		calendar.google.com,					personal
@@ -24,3 +24,4 @@ swisscovery,	uzb.swisscovery.slsp.ch,				uni
 reddit,			www.reddit.com,							entertainment
 twitch,			www.twitch.tv,							entertainment
 youtube,		www.youtube.com,						entertainment
+jellyfin,		http://192.168.0.21:8096,				entertainment

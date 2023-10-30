@@ -38,13 +38,16 @@ with open('content.csv', 'r') as file:
         elif entry[0] == 'blank':
             htmlTemplate = htmlTemplate.format(entry=blankTemplate, styles='{styles}')
         else:
+            link = entry[1].lstrip()
+            if not link[:7] == 'http://' and not link[:8] == 'https://':
+                link = 'https://' + entry[1].lstrip()
             htmlTemplate = htmlTemplate.format(entry=entryTemplate.format(
-            url			= 'https://' + entry[1].lstrip(),
-            category	= entry[2].lstrip(),
-            index		= index,
-            short		= entry[0][0:2].title(),
-            name		= entry[0].title(),
-            entry 		= '{entry}'
+            url          = link,
+            category     = entry[2].lstrip(),
+            index        = index,
+            short        = entry[0][0:2].title(),
+            name         = entry[0].title(),
+            entry        = '{entry}'
             )[:-1], styles = '{styles}')
             index += 1
         count += 1
@@ -70,6 +73,6 @@ cssTemplate = cssTemplate.replace('$entry$', '')
 # Cleaning the html template
 htmlTemplate = htmlTemplate.format(entry='', styles=cssTemplate)
 
-htmlFile	= open('home.html', 'w')
+htmlFile = open('home.html', 'w')
 htmlFile.write(htmlTemplate)
 htmlFile.close()
